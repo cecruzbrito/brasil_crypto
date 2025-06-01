@@ -37,8 +37,6 @@ class CryptoAssetEntity with StringMixin {
 
   String getPrice() => formatMoney(priceUsd, symbol: "USD \$");
 
-  bool filterByNameOrSymbol(String value) => compareString(symbol ?? "", value) || compareString(name ?? "", value);
-
   String getSuply() => '${formatBigNumber(supply)} $symbol';
 
   String getMaxSuply() => '${formatBigNumber(maxSupply)} $symbol';
