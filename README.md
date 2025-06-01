@@ -106,10 +106,12 @@ A chave de acesso (**apiKey**) para a API da **CoinCap** está armazenada no **F
 
 Devido às limitações do plano gratuito da API, não foi possível implementar a atualização dos dados via **WebSocket** para receber informações em tempo real. Além disso, optou-se por não utilizar uma solução alternativa menos eficiente, como consultas periódicas à API, tanto para evitar sobrecarga quanto por conta do número limitado de consultas permitidas por **apiKey** no plano gratuito, garantindo assim a qualidade e estabilidade do aplicativo.
 
-Para atualizar as informações exibidas nas páginas inicial e de favoritas, o usuário deve utilizar o gesto de pull-to-refresh, implementado com o pacote pull_to_refresh_flutter3. Esse recurso permite que o usuário atualize manualmente os dados ao “puxar” a lista para baixo, acionando uma atualização intuitiva e visualmente agradável.
+Para atualizar as informações exibidas nas páginas inicial e de favoritas, o usuário deve utilizar o gesto de pull-to-refresh, implementado com o pacote **pull_to_refresh_flutter3**. Esse recurso permite que o usuário atualize manualmente os dados ao “puxar” a lista para baixo, acionando uma atualização intuitiva e visualmente agradável.
 
 # Configuração do Firebase para rodar o código-fonte
-Para executar o projeto pelo código-fonte, é necessário configurar o Firebase. Caso queira executar o app localmente, entre em contato comigo enviando seu e-mail para que eu possa adicioná-lo ao projeto no **Firebase**. Após isso, basta executar o comando abaixo para configurar o Firebase no seu ambiente de desenvolvimento:
+Para executar o projeto pelo código-fonte, é necessário configurar o **Firebase**. Caso queira executar o app localmente, entre em contato comigo enviando seu e-mail para que eu possa adicioná-lo ao projeto no **Firebase**. Após isso, basta executar o comando abaixo para configurar o Firebase no seu ambiente de desenvolvimento:
 
 ```bash
 flutterfire configure
+```
+E caso as consultas gratuitas acabem, tornando impossivel ver as informações das moedas, bastará mudá-la no painel do **Firebase Remote Config**.
