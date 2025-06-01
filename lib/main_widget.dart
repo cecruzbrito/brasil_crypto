@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
 
 import 'core/theme/theme.dart';
 
@@ -30,6 +31,7 @@ class _MainWidgetState extends State<MainWidget> {
       title: "Brasil Cripto",
       routerConfig: Modular.routerConfig,
       localizationsDelegates: const [
+        RefreshLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,

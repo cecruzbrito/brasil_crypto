@@ -47,6 +47,7 @@ dependencies:
   syncfusion_flutter_charts: ^29.2.7
   firebase_core: ^3.13.1
   firebase_remote_config: ^5.4.4
+  pull_to_refresh_flutter3: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +60,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
   flutter_launcher_icons: ^0.14.3
+  rename_app: ^1.6.3
 
 flutter_launcher_icons:
   android: "launcher_icon"

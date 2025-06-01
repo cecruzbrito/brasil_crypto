@@ -6,6 +6,7 @@ import 'package:brasilcripto/modules/home/home/widgets/pagination_crypto.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/widgets/builder/builder_widget.dart';
+import '../../../core/widgets/scroll/core_scroll_pull_refresh.dart';
 import 'store/favorites_store.dart';
 
 class FavoritesPage extends StatefulWidget {
@@ -45,11 +46,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
             return Column(
               children: [
                 Expanded(
-                  child: CoreScroll(
-                    child: ListItensCrypto(
-                      onTapFavoriteCrypto: store.onTapFavoriteCrypto,
-                      cryptos: state.cryptos,
-                      favorites: state.favorites,
+                  child: CoreScrollPullRefresh(
+                    onReload: store.getFavorites,
+                    child: CoreScroll(
+                      child: ListItensCrypto(
+                        onTapFavoriteCrypto: store.onTapFavoriteCrypto,
+                        cryptos: state.cryptos,
+                        favorites: state.favorites,
+                      ),
                     ),
                   ),
                 ),
