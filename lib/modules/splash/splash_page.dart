@@ -1,8 +1,12 @@
 import 'package:brasilcripto/core/services/navigation/service_navigation.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_ce/hive.dart';
 import 'package:path_provider/path_provider.dart';
+
+import '../../firebase_options.dart';
 
 class SpashPage extends StatefulWidget {
   const SpashPage({super.key});
@@ -63,8 +67,12 @@ class _SpashPageState extends State<SpashPage> with TickerProviderStateMixin {
 
   initApp() async {
     WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
     final path = kIsWeb ? null : (await getApplicationDocumentsDirectory()).path;
     Hive.init(path);
+    await FirebaseRemoteConfig.instance.setConfigSettings(
+      RemoteConfigSettings(fetchTimeout: const Duration(minutes: 1), minimumFetchInterval: Duration(seconds: 0)),
+    );
     ServiceNavigation.nav("/home/initial_page");
   }
 
