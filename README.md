@@ -21,7 +21,7 @@ Este módulo segue uma arquitetura baseada em **Clean Architecture**, com adapta
 │       ├── <nome_da_tela>/
 │       │   ├── <nome_da_tela>_page.dart
 │       │   ├── widgets/
-│       │   └── cubit/
+│       │   └── store/
 │       └── ...
 ```
 
