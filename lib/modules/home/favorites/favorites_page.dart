@@ -1,12 +1,11 @@
-import 'package:brasilcripto/core/services/navigation/service_navigation.dart';
-import 'package:brasilcripto/core/widgets/body/body.dart';
-import 'package:brasilcripto/core/widgets/scroll/core_scroll.dart';
-import 'package:brasilcripto/modules/home/home/widgets/list_itens_crypto.dart';
-import 'package:brasilcripto/modules/home/home/widgets/pagination_crypto.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/widgets/body/body.dart';
 import '../../../core/widgets/builder/builder_widget.dart';
+import '../../../core/widgets/scroll/core_scroll.dart';
 import '../../../core/widgets/scroll/core_scroll_pull_refresh.dart';
+import '../home/widgets/list_itens_crypto.dart';
+import '../home/widgets/pagination_crypto.dart';
 import 'store/favorites_store.dart';
 
 class FavoritesPage extends StatefulWidget {

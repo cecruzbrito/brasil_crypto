@@ -108,6 +108,9 @@ Devido às limitações do plano gratuito da API, não foi possível implementar
 
 Para atualizar as informações exibidas nas páginas inicial e de favoritas, o usuário deve utilizar o gesto de pull-to-refresh, implementado com o pacote **pull_to_refresh_flutter3**. Esse recurso permite que o usuário atualize manualmente os dados ao “puxar” a lista para baixo, acionando uma atualização intuitiva e visualmente agradável.
 
+# Tema do Aplicativo
+O tema da aplicação foi desenvolvido seguindo o esquema do Material You (Material 3), utilizando as diretrizes e recursos disponíveis no site https://material-foundation.github.io/material-theme-builder/. Essa abordagem garante uma interface moderna, harmoniosa e adaptável, que proporciona uma experiência visual consistente e agradável, alinhada às melhores práticas de design do Google.
+
 # Configuração do Firebase para rodar o código-fonte
 Para executar o projeto pelo código-fonte, é necessário configurar o **Firebase**. Caso queira executar o app localmente, entre em contato comigo enviando seu e-mail para que eu possa adicioná-lo ao projeto no **Firebase**. Após isso, basta executar o comando abaixo para configurar o Firebase no seu ambiente de desenvolvimento:
 

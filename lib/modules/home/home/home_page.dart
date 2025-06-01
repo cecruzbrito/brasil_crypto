@@ -1,14 +1,11 @@
-import 'package:brasilcripto/core/services/navigation/service_navigation.dart';
-import 'package:brasilcripto/modules/home/home/widgets/item_crypto.dart';
 import 'package:flutter/material.dart';
-import 'package:hive_ce/hive.dart';
 import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
 
+import '../../../core/services/navigation/service_navigation.dart';
 import '../../../core/widgets/body/body.dart';
 import '../../../core/widgets/builder/builder_widget.dart';
 import '../../../core/widgets/scroll/core_scroll.dart';
 import '../../../core/widgets/scroll/core_scroll_pull_refresh.dart';
-import '../../../core/widgets/text_fields/default/core_text_field_default.dart';
 import 'store/home_store.dart';
 import 'widgets/list_itens_crypto.dart';
 import 'widgets/pagination_crypto.dart';

@@ -1,18 +1,17 @@
-import 'package:brasilcripto/core/services/env/domain/repository/env_repository.dart';
-import 'package:brasilcripto/core/services/env/infra/datasource/env_datasource.dart';
 import 'package:dio/dio.dart';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'services/api_request/domain/repositories/api_request_repository.dart';
 import 'services/api_request/external/datasources/remote/api_request_datasouce_remote_imp.dart';
 import 'services/api_request/infra/datasource/api_request_datasource.dart';
 import 'services/api_request/infra/repositories/api_request_repository_imp.dart';
-import 'services/cache_service/domain/repository/cache_service_repository.dart' show CacheServiceRepository;
+import 'services/cache_service/domain/repository/cache_service_repository.dart';
 import 'services/cache_service/external/datasource/local/cache_service_local_datasource_imp.dart';
 import 'services/cache_service/infra/datasource/cache_service_datasource.dart';
 import 'services/cache_service/infra/repositories/cache_service_repository_imp.dart';
+import 'services/env/domain/repository/env_repository.dart';
 import 'services/env/external/datasource/env_datasource_imp.dart';
+import 'services/env/infra/datasource/env_datasource.dart';
 import 'services/env/infra/repository/env_repository_imp.dart';
 import 'services/http_request/domain/repositories/http_request_repository.dart';
 import 'services/http_request/external/datasources/remote/http_request_datasource_remote_imp.dart';

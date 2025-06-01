@@ -11,28 +11,14 @@ class InfoCryptoWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final symbol = crypto.symbol ?? "";
-    final title = "${crypto.name ?? ""} ($symbol)";
-
-    final titleRank = "Posição no ranking";
-    final rank = crypto.rank == null ? "" : "${crypto.rank}°";
-
-    final titlePriceUsc = "Preço atual";
     final priceUsc = crypto.getPrice();
 
     final supplyTitle = "Oferta em circulação";
     final supply = crypto.getSuply();
 
-    final maxSupplyTitle = "Oferta máxima";
-    final maxSupply = crypto.getMaxSuply();
-
     final titleMarketCapUsd = "Valor de mercado";
     final markedcapUsd = crypto.getMarketCapUsd();
 
-    final vwap24HrTitle = "Preço médio ponderado (24h)";
-    final vwap24Hr = crypto.getVwap24Hr();
-
-    final titleChangePercent24Hr = "Variação (24h)";
     final changePercent24Hr = crypto.getChangePercent24Hr();
 
     final titleVolumeUsd24Hr = "Volume (24h)";

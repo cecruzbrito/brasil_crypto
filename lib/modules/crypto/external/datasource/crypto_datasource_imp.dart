@@ -1,14 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:brasilcripto/core/errors/errors.dart';
-import 'package:brasilcripto/core/services/api_request/domain/errors/api_request_errors.dart';
-import 'package:brasilcripto/core/services/api_request/domain/repositories/api_request_repository.dart';
-import 'package:brasilcripto/core/services/api_request/external/datasources/remote/api_request_datasouce_remote_imp.dart';
-import 'package:brasilcripto/core/services/cache_service/domain/entities/cache_keys.dart';
-import 'package:brasilcripto/core/services/cache_service/domain/repository/cache_service_repository.dart';
-import 'package:brasilcripto/modules/crypto/domain/entities/crypto_asset_entity.dart';
-import 'package:brasilcripto/modules/crypto/domain/entities/crypto_history_entity.dart';
-import 'package:brasilcripto/modules/crypto/infra/datasource/crypto_datasource.dart';
 
+import '../../../../core/errors/errors.dart';
+import '../../../../core/services/api_request/domain/repositories/api_request_repository.dart';
+import '../../../../core/services/cache_service/domain/entities/cache_keys.dart';
+import '../../../../core/services/cache_service/domain/repository/cache_service_repository.dart';
+import '../../domain/entities/crypto_asset_entity.dart';
+import '../../domain/entities/crypto_history_entity.dart';
+import '../../infra/datasource/crypto_datasource.dart';
 import '../mappers/crypto_asset_mapper.dart';
 import 'crypto_history_mapper.dart';
 

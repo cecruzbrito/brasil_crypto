@@ -1,6 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:hive_ce/hive.dart';
 
 import '../../../../core/mixin/forms_validator/forms_validator.dart';
 import '../../../../core/widgets/text_fields/default/core_text_field_default.dart';
